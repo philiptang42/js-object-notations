@@ -73,3 +73,16 @@ rectangle.setWidth = function(newWidth) {
 // here change the width to 8 and height to 6 using our new methods
 rectangle.setWidth(8);
 rectangle.setHeight(6);
+
+var square = new Object();
+square.sideLength = 6;
+square.calcPerimeter = function() {
+  return this.sideLength * 4;
+};
+// help us define an area method here
+square.calcArea = function() {
+  return this.sideLength * this.sideLength;
+};
+
+var p = square.calcPerimeter();
+var a = square.calcArea();
