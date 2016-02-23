@@ -121,3 +121,21 @@ var sally = new Person("Sally Bowles", 39)
 var holden = new Person("Holden Caulfield", 16)
 console.log("sally's species is " + sally.species + " and she is " + sally.age + " years old." );
 console.log("holden's species is " + holden.species + " and he is " + holden.age + " years old.");
+
+function Rectangle(height, width) {
+  this.height = height;
+  this.width = width;
+  this.calcArea = function() {
+      return this.height * this.width;
+  };
+  // put our perimeter function here!
+  this.calcPerimeter = function() {
+      return (this.height * 2) + (this.width * 2);
+  };
+}
+
+var rex = new Rectangle(7,3);
+var area = rex.calcArea();
+var perimeter = rex.calcPerimeter();
+
+console.log(perimeter)
